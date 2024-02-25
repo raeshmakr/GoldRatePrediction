@@ -1,2 +1,1 @@
 # GoldRatePrediction
-Gold Rate Prediction
