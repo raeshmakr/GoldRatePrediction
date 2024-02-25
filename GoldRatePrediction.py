@@ -96,14 +96,14 @@ sns.heatmap(correlation, cbar=True, square=True, fmt='.1f',annot=True, annot_kws
 
 
 # correlation values of GOLD
-print(correlation['GOLD'])
+print(correlation['GLD'])
 
 
 # In[22]:
 
 
 # checking the distribution of Gold Rate
-sns.distplot(gold_data['GOLD'],color='blue')
+sns.distplot(gold_data['GLD'],color='blue')
 
 
 # Splitting the Features and Target
@@ -111,8 +111,8 @@ sns.distplot(gold_data['GOLD'],color='blue')
 # In[26]:
 
 
-X = gold_data.drop(['Date','GOLD'],axis=1)
-Y = gold_data['GOLD']
+X = gold_data.drop(['Date','GLD'],axis=1)
+Y = gold_data['GLD']
 
 
 # In[27]:
@@ -192,7 +192,7 @@ Y_test = list(Y_test)
 
 
 plt.plot(Y_test, color='blue', label = 'Actual Value')
-plt.plot(test_data_prediction, color='blue', label='Predicted Value')
+plt.plot(test_data_prediction, color='red', label='Predicted Value')
 plt.title('Actual Rate vs Predicted Rate')
 plt.xlabel('Number of values')
 plt.ylabel('GOLD Rate')
